@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; //makes the children flex-items but not flex containers
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#Header {
+    display: flex;
+    height:100px;
+    width: 95vw;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    border-color: black;
+    border: 10px;
+    justify-content: space-between;  
+}
+
+.header-right, .header-left {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center; 
+    gap: 25px; 
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.header-left {
+    padding-left: 40px;
+}
+
+a {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#Hero {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    height: 700px;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Hero > img {
+    display: flex;
+    height: 400px;
+    width: 600px;
+    justify-content: center;
+}
+
+#searchbar {
+    gap: 5px;
+    margin-top: -90px; //darf ich das so machen oder gibt es da was besseres
+    margin-left: -50px;
+    height: 200px;
+    width: 800px;
+
+    .fa-magnifying-glass {
+        position: absolute;
+        padding: 30px;
+    }
+}
+
+
+form {
+    width: inherit;
+    height: 100px;
+
+    #icons {
+        display: flex;
+        margin-top: -30px;
+        margin-left: 690px;
+        gap: 30px;
+    }
+
+}
+
+#searchInput {
+    font-size: x-large;
+    padding-left: 75px;
+    height: 55%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+
+.btns-hero {
+    display: flex;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+
+    input, button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+
+    }
+}
+
+
+#country {
+    height: 70px;
+    display: flex;
+    padding-left: 20px;
+    border-bottom: solid black 1px;
+    p {
+        font-size: 24px;
+    }
+}
+
+#footer {
+height: 100px;
+display: flex;
+justify-content: space-between;
+width: 96%;
+padding-left: 20px;
+margin-bottom: 0;
+margin-top: 5px;
+}
+
+.footer-left, .footer-right {
+    margin-top: 5px;
+    display: flex;
+    gap: 45px;
+
+    a{
+        font-size: 24px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
